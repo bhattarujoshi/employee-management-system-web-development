@@ -1,0 +1,63 @@
+/* ══════════════════════════════════════════
+   WorkForce EMS — CSS Variables & Reset
+   ══════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  /* Backgrounds */
+  --bg: #0a0d14;
+  --bg2: #111520;
+  --bg3: #181e2e;
+  --surface: #1e2537;
+  --surface2: #252d42;
+
+  /* Borders */
+  --border: #2e3a55;
+  --border2: #3a4a6b;
+
+  /* Accent Colors */
+  --accent: #4f8ef7;
+  --accent2: #7c5cf6;
+  --accent3: #22d3a5;
+  --accent4: #f97316;
+
+  /* Status Colors */
+  --danger: #ef4444;
+  --warn: #f59e0b;
+  --success: #22d3a5;
+
+  /* Text */
+  --text: #e8edf8;
+  --text2: #a0aec0;
+  --text3: #64748b;
+
+  /* Spacing & Shape */
+  --radius: 14px;
+  --radius-sm: 8px;
+  --radius-xs: 6px;
+
+  /* Shadows */
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --glow: 0 0 20px rgba(79, 142, 247, 0.15);
+}
+
+/* ── RESET ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { font-family: inherit; }
+input, select, textarea { font-family: inherit; }
